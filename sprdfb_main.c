@@ -939,6 +939,7 @@ static struct platform_driver sprdfb_driver = {
 
 static int __init sprdfb_init(void)
 {
+	printk("sprdfb_init\n");
 	return platform_driver_register(&sprdfb_driver);
 }
 
